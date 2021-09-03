@@ -1,14 +1,365 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>トップページ</title>
+  <style>
+    .test2 {
+      padding-left: 50px;
+      font-family: cursive;
+      font-weight: 900;
+      font-size: inherit;
+    }
+
+    .test9 {
+      text-align: center;
+      /*transform: rotate(-3deg);*/
+      line-height: 160px;
+      /*padding:20px 0;*/
+      color: #FFF9C4;
+      background-color: #B3E5FC;
+      font-size: 80px;
+      font-family: monospace;
+      border-radius: 0 0 65% 65% / 50% 50% 50% 50%;
+      font-family: cursive;
+
+    }
+
+    .test3 {
+
+      text-align: center;
+      /*transform: rotate(-3deg);*/
+      line-height: 160px;
+      /*padding:20px 0;*/
+      color: #FFF9C4;
+      background-color: #B3E5FC;
+      font-size: 80px;
+      font-family: monospace;
+      border-radius: 65% 65% 0 0 / 50% 50% 50% 50%;
+      font-family: cursive;
+
+    }
+
+
+
+    p {
+      padding-left: 10px;
+    }
+
+    .image-cover {
+      text-align: center;
+      background-color: red;
+      background-image: url("/html-practice1/IMG_4343.JPG");
+      background-size: cover;
+      height: 500px;
+
+      color: white;
+      background-color: rgba(224, 227, 218, 0.6);
+      padding: 15px;
+      font-size: 30px;
+      font-weight: 900;
+      font-family: cursive;
+      text-shadow: 3px 3px 3px #333;
+      box-sizing: border-box;
+    }
+
+    .div-cover {
+      background-color: #B3E5FC;
+      width: 100%;
+    }
+
+    .div-group {
+      width: 24.7%;
+      display: inline-block;
+      color: white;
+      padding: 12px;
+      border: 6px solid#B3E5FC;
+      box-sizing: border-box;
+    }
+
+    .div-group2 {
+      /* margin:10px; */
+      margin-bottom: 10px;
+    }
+
+    .my-button1 {
+      display: inline-block;
+      background-color: #1565C0;
+      background-image: url("IMG_4435.JPG");
+      background-size: cover;
+      color: #FFF9C4;
+      font-family: cursive;
+      padding: 8px 32px;
+      font-weight: 1000px;
+      top: 100px;
+      width: 180px;
+      /* ※縦横を同値に */
+      height: 180px;
+      box-shadow: 3px 3px 3px rgb(126, 126, 126);
+      border-radius: 100px;
+      text-align: center;
+      text-decoration: none;
+    }
+
+    .my-button2 {
+      display: inline-block;
+      background-color: #1565C0;
+      background-image: url("IMG_4986.JPG");
+      background-size: 800px;
+      color: #FFF9C4;
+      font-family: cursive;
+      padding: 8px 32px;
+      font-weight: 1000px;
+      top: 100px;
+      width: 180px;
+      /* ※縦横を同値に */
+      height: 180px;
+      box-shadow: 3px 3px 3px rgb(126, 126, 126);
+      border-radius: 100px;
+      text-align: center;
+      text-decoration: none;
+
+    }
+
+    .my-button3 {
+      display: inline-block;
+      background-image: url("IMG_4524.JPG");
+      background-size: cover;
+      color: #FFF9C4;
+      font-family: cursive;
+      padding: 8px 32px;
+      font-weight: 1000px;
+      top: 100px;
+      width: 180px;
+      /* ※縦横を同値に */
+      height: 180px;
+      box-shadow: 3px 3px 3px rgb(126, 126, 126);
+      border-radius: 100px;
+      text-align: center;
+      text-decoration: none;
+
+    }
+
+    .my-button4 {
+      display: inline-block;
+      background-image: url("jinnjya1.jpg");
+      background-size: 800px;
+      color: #FFF9C4;
+      font-family: cursive;
+      padding: 8px 32px;
+      font-weight: 1000px;
+      top: 100px;
+      width: 180px;
+      /* ※縦横を同値に */
+      height: 180px;
+      box-shadow: 3px 3px 3px rgb(126, 126, 126);
+      border-radius: 100px;
+      text-align: center;
+      text-decoration: none;
+
+    }
+
+    .my-button5 {
+      display: inline-block;
+      background-image: url("DSC_0300.JPG");
+      background-size: 800px;
+      color: #FFF9C4;
+      font-family: cursive;
+      padding: 8px 32px;
+      font-weight: 1000px;
+      top: 100px;
+      width: 180px;
+      /* ※縦横を同値に */
+      height: 180px;
+      box-shadow: 3px 3px 3px rgb(126, 126, 126);
+      border-radius: 100px;
+      text-align: center;
+      text-decoration: none;
+
+    }
+
+    .my-button6 {
+      display: inline-block;
+      background-color: #1565C0;
+      background-image: url("IMG_4995.JPG");
+      background-size: 700px;
+      color: #FFF9C4;
+      font-family: cursive;
+      padding: 8px 32px;
+      font-weight: 1000px;
+      top: 100px;
+      width: 180px;
+      /* ※縦横を同値に */
+      height: 180px;
+      box-shadow: 3px 3px 3px rgb(126, 126, 126);
+      border-radius: 100px;
+      text-align: center;
+      text-decoration: none;
+
+    }
+
+    .my-button:hover {
+      box-shadow: white;
+    }
+
+    .my-button:active {
+      box-shadow: none;
+    }
+
+    .trim-image-to-circle {
+
+      background-image: url("IMG_2681.JPG");
+      /* 表示する画像 */
+      width: 280px;
+      /* ※縦横を同値に */
+      height: 280px;
+      /* ※縦横を同値に */
+      border-radius: 50%;
+      /* 角丸半径を50%にする(=円形にする) */
+      background-position: center center;
+      /* 横長画像の左上を基準に表示 */
+      background-size: cover;
+      margin-bottom: 18px;
+      margin-left: 40%;
+      margin-right: 0%;
+
+      /*background-repeat: no-repeat;
+    background-color: #333; */
+      display: inline-block;
+      /* 複数の画像を横に並べたい場合 */
+    }
+
+    /* display position float flex */
+    .flex {
+      display: flex;
+    }
+
+    .flex .text {
+      margin: 0 0 0 20px;
+      font-size: 32px;
+      transform: rotate(-3deg);
+      color: #A1887F;
+    }
+
+    .pictures {
+      font-size: 100px;
+      text-align: center;
+      color: lightcoral;
+    }
+
+    body {
+      background-color: #FFF9C4;
+      margin: 0;
+    }
+  </style>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/css/lightbox.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/js/lightbox.min.js"
+    type="text/javascript"></script>
+
 </head>
+
 <body>
-  <h1>Hello World</h1>  
-  <p>トップページを表示しています</p>
-  <p>Hey,Hey!</p>
+  <!--<img src=IMG_2681.JPG>-->
+  <div class="test9" id="test9">Welcome to my portfolio</div>
+  <div class="test2">自己紹介と学習中のプログラミング言語</div>
+  <p　class="jiko">
+    神戸電子専門学校<br>
+    ITスペシャリスト学科<br>
+    2年　苅安竜士
+  </p>
+
+  <div class="flex">
+    <figure class="trim-image-to-circle"></figure>
+    <p class="text">
+      HTML&CSS<br>
+      C言語<br>
+      PYTHON<br>
+      JAVA<br>
+      JAVASCRIPT<br>
+      NODE.JS<br>
+    </p>
+  </div>
+
+
+  <div class="image-cover">
+    どうもこんにちは！<br>
+    苅安竜士19歳です<br>
+    The teenage last謳歌してます！<br>
+    プログラミング言語を学び始めて2年目です</br>
+    <span id="test1">
+      HTML の練習ページへようこそ！
+    </span>
+    <input type="button" value="button" onclick="changeText()">
+  </div>
+  <div class="div-cover">
+    <div class="div-group" style="background-color: #F8BBD0;">
+      <a class="mybutton" herf="IMG_4343.JPG">
+        趣味</br>
+        #筋トレ</br>
+        #Iphoneで写真を取る事</br>
+
+      </a>
+    </div>
+    <div class="div-group" style="background-color:#F48FB1;">
+      バイト経験</br>
+      #接客</br>
+      #引っ越し</br>
+    </div>
+    <div class="div-group" style="background-color: #EC407A;">
+      好きなスポーツ</br>
+      #サッカー</br>
+      </br>
+    </div>
+    <div class="div-group" style="background-color:#D81B60 ;">
+      最近始めたこと</br>
+      #料理</br>
+      #カフェ巡り</br>
+    </div>
+  </div>
+  <br>
+  <!--<div class="div-cover">
+    <div style="background-color: yellow;margin-bottom:10px;">DIV1</div>
+    <div style="background-color: green;margin-bottom:20px;">DIV2</div>
+  </div>-->
+  <div class="pictures">
+    Took various pictures
+  </div>
+
+  <div>
+    <a class="my-button1" href=IMG_4435.JPG data-lightbox="group"></br>NO.1</br>アウトレット</a>
+    <a class="my-button2" href="IMG_4986.JPG" data-lightbox="group"> </br>No.2</br>北野異人館</a>
+    <a class="my-button3" href="IMG_4524.JPG" data-lightbox="group"></br>No.3</br>ハワイ公園</a>
+    <a class="my-button4" href="jinnjya1.jpg" data-lightbox="group"></br>No.4</br>太宰府天満宮</a>
+    <a class="my-button5" href="DSC_0300.JPG" data-lightbox="group"></br>No.5</br>神戸</a>
+    <a class="my-button6" href="IMG_4995.JPG" data-lightbox="group"></br>No.6</br>staiton</a>
+
+  </div>
+
+  <div class="test3" id="test3">Thanks for wacthing!</div>
+  <script>
+    console.log("HELLO!");
+    var isHacked = false
+    function changeText() {
+      console.log("クリックされたよ！");
+      var elm = document.getElementById("test1")
+      if (isHacked) {
+        elm.innerText = "HTML の練習ページへようこそ！"
+        elm.style.backgroundColor = "transparent"
+        elm.style.color = "inherit"
+      } else {
+        elm.innerText = "ハッキングした！"
+        elm.style.backgroundColor = "black"
+        elm.style.color = "red"
+
+      }
+      isHacked = !isHacked
+    }
+
+  </script>
 </body>
+
 </html>
