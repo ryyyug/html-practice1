@@ -51,13 +51,11 @@
 
     .image-cover {
       text-align: center;
-      background-color: red;
       background-image: url("/html-practice1/IMG_4343.JPG");
       background-size: cover;
       height: 500px;
-
       color: white;
-      background-color: rgba(224, 227, 218, 0.6);
+      background-color: rgba( 204, 255, 204, 0.55 );
       padding: 15px;
       font-size: 30px;
       font-weight: 900;
@@ -202,7 +200,7 @@
     }
 
     .my-button:hover {
-      box-shadow: white;
+      box-shadow:white;
     }
 
     .my-button:active {
@@ -287,13 +285,19 @@
 
   <div class="image-cover">
     どうもこんにちは！<br>
-    苅安竜士19歳です<br>
+    苅安竜士19歳<br>
     The teenage last謳歌してます！<br>
-    プログラミング言語を学び始めて2年目です</br>
+    プログラミング言語を学び始めて2年目になります</br>
+    ＜好きな言葉＞</br>
     <span id="test1">
-      HTML の練習ページへようこそ！
+      己の欲せざる所は人に施すこと勿れ</br>
+      意味は下のボタンをクリックしてみてね！</br>
+
     </span>
-    <input type="button" value="button" onclick="changeText()">
+    <input type="button" value="check!" onclick="changeText()"></br>
+    出典 : 「論語一衛霊公」</br>
+    当たり前のことですが小学生の時に</br>
+    知ってとても印象的な言葉です</br>
   </div>
   <div class="div-cover">
     <div class="div-group" style="background-color: #F8BBD0;">
@@ -347,13 +351,13 @@
       console.log("クリックされたよ！");
       var elm = document.getElementById("test1")
       if (isHacked) {
-        elm.innerText = "HTML の練習ページへようこそ！"
+        elm.innerText = "己の欲せざる所は人に施すこと勿れ"
         elm.style.backgroundColor = "transparent"
         elm.style.color = "inherit"
       } else {
-        elm.innerText = "ハッキングした！"
+        elm.innerText = "自分がされて嫌なことはしない"
         elm.style.backgroundColor = "black"
-        elm.style.color = "red"
+        elm.style.color = "white"
 
       }
       isHacked = !isHacked
