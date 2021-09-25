@@ -25,11 +25,9 @@
       font-family: monospace;
       border-radius: 0 0 65% 65% / 50% 50% 50% 50%;
       font-family: cursive;
-
     }
 
     .test3 {
-
       text-align: center;
       /*transform: rotate(-3deg);*/
       line-height: 160px;
@@ -40,10 +38,7 @@
       font-family: monospace;
       border-radius: 65% 65% 0 0 / 50% 50% 50% 50%;
       font-family: cursive;
-
     }
-
-
 
     p {
       padding-left: 10px;
@@ -55,7 +50,7 @@
       background-size: cover;
       height: 500px;
       color: white;
-      background-color: rgba( 204, 255, 204, 0.55 );
+      background-color: rgba(204, 255, 204, 0.55);
       padding: 15px;
       font-size: 30px;
       font-weight: 900;
@@ -83,10 +78,14 @@
       margin-bottom: 10px;
     }
 
-    .my-button1 {
+    .my-button-cover {
+      text-align: center;
+    }
+
+    .my-button {
+      transition-duration: 0.5s;
       display: inline-block;
       background-color: #1565C0;
-      background-image: url("IMG_4435.JPG");
       background-size: cover;
       color: #FFF9C4;
       font-family: cursive;
@@ -97,110 +96,20 @@
       /* ※縦横を同値に */
       height: 180px;
       box-shadow: 3px 3px 3px rgb(126, 126, 126);
-      border-radius: 100px;
+      border-radius: 30px;
       text-align: center;
       text-decoration: none;
-    }
-
-    .my-button2 {
-      display: inline-block;
-      background-color: #1565C0;
-      background-image: url("IMG_4986.JPG");
-      background-size: 800px;
-      color: #FFF9C4;
-      font-family: cursive;
-      padding: 8px 32px;
-      font-weight: 1000px;
-      top: 100px;
-      width: 180px;
-      /* ※縦横を同値に */
-      height: 180px;
-      box-shadow: 3px 3px 3px rgb(126, 126, 126);
-      border-radius: 100px;
-      text-align: center;
-      text-decoration: none;
-
-    }
-
-    .my-button3 {
-      display: inline-block;
-      background-image: url("IMG_4524.JPG");
-      background-size: cover;
-      color: #FFF9C4;
-      font-family: cursive;
-      padding: 8px 32px;
-      font-weight: 1000px;
-      top: 100px;
-      width: 180px;
-      /* ※縦横を同値に */
-      height: 180px;
-      box-shadow: 3px 3px 3px rgb(126, 126, 126);
-      border-radius: 100px;
-      text-align: center;
-      text-decoration: none;
-
-    }
-
-    .my-button4 {
-      display: inline-block;
-      background-image: url("jinnjya1.jpg");
-      background-size: 800px;
-      color: #FFF9C4;
-      font-family: cursive;
-      padding: 8px 32px;
-      font-weight: 1000px;
-      top: 100px;
-      width: 180px;
-      /* ※縦横を同値に */
-      height: 180px;
-      box-shadow: 3px 3px 3px rgb(126, 126, 126);
-      border-radius: 100px;
-      text-align: center;
-      text-decoration: none;
-
-    }
-
-    .my-button5 {
-      display: inline-block;
-      background-image: url("DSC_0300.JPG");
-      background-size: 800px;
-      color: #FFF9C4;
-      font-family: cursive;
-      padding: 8px 32px;
-      font-weight: 1000px;
-      top: 100px;
-      width: 180px;
-      /* ※縦横を同値に */
-      height: 180px;
-      box-shadow: 3px 3px 3px rgb(126, 126, 126);
-      border-radius: 100px;
-      text-align: center;
-      text-decoration: none;
-
-    }
-
-    .my-button6 {
-      display: inline-block;
-      background-color: #1565C0;
-      background-image: url("IMG_4995.JPG");
-      background-size: 700px;
-      color: #FFF9C4;
-      font-family: cursive;
-      padding: 8px 32px;
-      font-weight: 1000px;
-      top: 100px;
-      width: 180px;
-      /* ※縦横を同値に */
-      height: 180px;
-      box-shadow: 3px 3px 3px rgb(126, 126, 126);
-      border-radius: 100px;
-      text-align: center;
-      text-decoration: none;
-
+      box-sizing: border-box;
     }
 
     .my-button:hover {
-      box-shadow:white;
+      width: 200px;
+      height: 200px;
+      border-radius: 30px;
+    }
+
+    .my-button:hover {
+      box-shadow: white;
     }
 
     .my-button:active {
@@ -208,7 +117,6 @@
     }
 
     .trim-image-to-circle {
-
       background-image: url("IMG_2681.JPG");
       /* 表示する画像 */
       width: 280px;
@@ -221,25 +129,28 @@
       /* 横長画像の左上を基準に表示 */
       background-size: cover;
       margin-bottom: 18px;
-      margin-left: 40%;
-      margin-right: 0%;
 
       /*background-repeat: no-repeat;
     background-color: #333; */
-      display: inline-block;
+      /*display: inline-block;*/
       /* 複数の画像を横に並べたい場合 */
     }
 
     /* display position float flex */
-    .flex {
+    .profile-area {
       display: flex;
+      justify-content: center;
     }
 
-    .flex .text {
+    .profile-area .profile-text-left {
+
+    }
+
+    .profile-area .profile-text-right {
       margin: 0 0 0 20px;
       font-size: 32px;
-      transform: rotate(-3deg);
       color: #A1887F;
+      transform: rotate(-3deg);
     }
 
     .pictures {
@@ -247,7 +158,8 @@
       text-align: center;
       color: lightcoral;
     }
-    .last{
+
+    .last {
       font-size: 30px;
       text-align: center;
       color: lightcoral;
@@ -269,15 +181,17 @@
   <!--<img src=IMG_2681.JPG>-->
   <div class="test9" id="test9">Welcome to my portfolio</div>
   <div class="test2">自己紹介と学習中のプログラミング言語</div>
-  <p　class="jiko">
-    神戸電子専門学校<br>
-    ITスペシャリスト学科<br>
-    2年　苅安竜士
-  </p>
 
-  <div class="flex">
-    <figure class="trim-image-to-circle"></figure>
-    <p class="text">
+
+  <div class="profile-area">
+    <p class="profile-text-left">
+      神戸電子専門学校<br>
+      ITスペシャリスト学科<br>
+      2年　苅安竜士<br>
+    </p>
+
+    <div class="trim-image-to-circle"></div>
+    <p class="profile-text-right">
       HTML&CSS<br>
       C言語<br>
       PYTHON<br>
@@ -292,41 +206,41 @@
     どうもこんにちは！<br>
     苅安竜士19歳<br>
     The teenage last謳歌してます！<br>
-    プログラミング言語を学び始めて2年目になります</br>
-    ＜好きな言葉＞</br>
+    プログラミング言語を学び始めて2年目になります<br />
+    ＜好きな言葉＞<br />
     <span id="test1">
-      己の欲せざる所は人に施すこと勿れ</br>
-      意味は下のボタンをクリックしてみてね！</br>
+      己の欲せざる所は人に施すこと勿れ<br />
+      意味は下のボタンをクリックしてみてね！<br />
 
     </span>
-    <input type="button" value="check!" onclick="changeText()"></br>
-    出典 : 「論語一衛霊公」</br>
-    当たり前のことですが小学生の時に</br>
-    知ってとても印象的な言葉です</br>
+    <input type="button" value="check!" onclick="changeText()"><br />
+    出典 : 「論語一衛霊公」<br />
+    当たり前のことですが小学生の時に<br />
+    知ってとても印象的な言葉です<br />
   </div>
   <div class="div-cover">
     <div class="div-group" style="background-color: #F8BBD0;">
       <a class="mybutton" herf="IMG_4343.JPG">
-        趣味</br>
-        #筋トレ</br>
-        #Iphoneで写真を取る事</br>
+        趣味<br />
+        #筋トレ<br />
+        #iPhoneで写真を取る事<br />
 
       </a>
     </div>
     <div class="div-group" style="background-color:#F48FB1;">
-      バイト経験</br>
-      #接客</br>
-      #引っ越し</br>
+      バイト経験<br />
+      #接客<br />
+      #引っ越し<br />
     </div>
     <div class="div-group" style="background-color: #EC407A;">
-      好きなスポーツ</br>
-      #サッカー</br>
-      </br>
+      好きなスポーツ<br />
+      #サッカー<br />
+      <br />
     </div>
     <div class="div-group" style="background-color:#D81B60 ;">
-      最近始めたこと</br>
-      #料理</br>
-      #カフェ巡り</br>
+      最近始めたこと<br />
+      #料理<br />
+      #カフェ巡り<br />
     </div>
   </div>
   <br>
@@ -338,18 +252,30 @@
     Took various pictures
   </div>
 
-  <div>
-    <a class="my-button1" href=IMG_4435.JPG data-lightbox="group"></br>NO.1</br>アウトレット</a>
-    <a class="my-button2" href="IMG_4986.JPG" data-lightbox="group"> </br>No.2</br>北野異人館</a>
-    <a class="my-button3" href="IMG_4524.JPG" data-lightbox="group"></br>No.3</br>ハワイ公園</a>
-    <a class="my-button4" href="jinnjya1.jpg" data-lightbox="group"></br>No.4</br>太宰府天満宮</a>
-    <a class="my-button5" href="DSC_0300.JPG" data-lightbox="group"></br>No.5</br>神戸</a>
-    <a class="my-button6" href="IMG_4995.JPG" data-lightbox="group"></br>No.6</br>staiton</a>
+  <div class="my-button-cover">
+    <a class="my-button" style="background-image: url('IMG_4435.JPG');" href=IMG_4435.JPG data-lightbox="group">
+      <br />NO.1<br />アウトレット
+    </a>
+    <a class="my-button" style="background-image: url('IMG_4986.JPG');" href="IMG_4986.JPG" data-lightbox="group">
+      <br />No.2<br />北野異人館
+    </a>
+    <a class="my-button" style="background-image: url('IMG_4524.JPG');" href="IMG_4524.JPG"
+      data-lightbox="group"><br />No.3<br />ハワイ公園
+    </a>
+    <a class="my-button" style="background-image: url('jinnjya1.jpg');" href="jinnjya1.jpg"
+      data-lightbox="group"><br />No.4<br />太宰府天満宮
+    </a>
+    <a class="my-button" style="background-image: url('DSC_0300.JPG');" href="DSC_0300.JPG"
+      data-lightbox="group"><br />No.5<br />神戸
+    </a>
+    <a class="my-button" style="background-image: url('IMG_4995.JPG');" href="IMG_4995.JPG"
+      data-lightbox="group"><br />No.6<br />staiton
+    </a>
 
   </div>
   <div class="last">
-    写真をクリックすると写真が見れるよ！</br>
-    ※画像はまだ写真の一部です</br>
+    写真をクリックすると写真が見れるよ！<br />
+    ※画像はまだ写真の一部です<br />
   </div>
   <div class="test3" id="test3">Thanks for wacthing!</div>
   <script>
